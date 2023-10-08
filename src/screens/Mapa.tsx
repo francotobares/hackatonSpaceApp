@@ -16,7 +16,7 @@ const Mapa = () => {
   return (
     <View style={{flex: 1, backgroundColor: '#white'}}>
       <Text style={{fontSize: 42, fontWeight: 'bold', textAlign: 'center'}}>
-        Mapa
+        Maps
       </Text>
       <View style={styles.container}>
         <Video

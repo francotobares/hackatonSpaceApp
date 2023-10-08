@@ -16,11 +16,11 @@ const Welcome: React.FC<Props> = ({navigation: {navigate}}) => {
       <View>
         <View style={{paddingHorizontal:40, paddingTop:40 }}>
             <Text style={{fontSize: 35, color: '#1F41BB', textAlign: 'center'}}>
-                Discover Your Social Platform Here
+                Alert and prevention aplication
             </Text>
 
             <Text style={{fontSize:14, color:'#000', textAlign:'center', marginTop:20}}>
-                Explore all the soical role based on your interest
+            Prevention and satellite warning for fires in real time
             </Text>
         </View>
         <View style={{paddingHorizontal:20, paddingTop:60, flexDirection:'row'}}>

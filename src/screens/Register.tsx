@@ -66,15 +66,6 @@ const Register: React.FC<Props> = ({navigation: {navigate}}) => {
             }}>
             Create Account
           </Text>
-          <Text
-            style={{
-              fontSize: 20,
-              maxWidth: '80%',
-              textAlign: 'center',
-              fontWeight: '600',
-            }}>
-            Create an account so you can explore all the Social platform
-          </Text>
         </View>
         <View style={{marginVertical: 30}}>
           <AppTextInput

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Alert, Modal, StyleSheet, Text, Pressable, View} from 'react-native';
 import IconF from 'react-native-vector-icons/MaterialCommunityIcons';
+import Icon from 'react-native-vector-icons/Entypo';
 
 const Alertar = () => {
   const [modalVisible, setModalVisible] = useState(false);
@@ -12,9 +13,9 @@ const Alertar = () => {
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-      <IconF name="alert" size={120} color="#EA1F12" />
+      <Icon name="megaphone" size={120} color="#2196F3" />
       <Text style={{fontSize: 42, fontWeight: 'bold', margin: 20}}>
-        Alerta comunitaria
+        Comunity Alert
       </Text>
       <Modal
         animationType="slide"
@@ -27,15 +28,15 @@ const Alertar = () => {
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
             <IconF name="alert" size={120} color="#EA1F12" />
-            <Text style={{fontSize: 42, fontWeight: 'bold'}}>Alerta</Text>
+            <Text style={{fontSize: 42, fontWeight: 'bold'}}>Alert</Text>
             <Text style={styles.modalText}>
-              Se ha informado sobre un incidente cercano dirigirse hacia las
-              areas seguras que se pondran a disposicion en el mapa
+              Incident report near you: please follow directions to a safe area
+              in the Maps section
             </Text>
             <Pressable
               style={[styles.button, styles.buttonClose]}
               onPress={() => setModalVisible(!modalVisible)}>
-              <Text style={styles.textStyle}>Entendido</Text>
+              <Text style={styles.textStyle}>Ok</Text>
             </Pressable>
           </View>
         </View>
@@ -43,7 +44,7 @@ const Alertar = () => {
       <Pressable
         style={[styles.button, styles.buttonOpen]}
         onPress={() => setModalVisible(true)}>
-        <Text style={styles.textStyle}>Alertar de un incendio a la zona</Text>
+        <Text style={styles.textStyle}>Report a fire nearby</Text>
       </Pressable>
     </View>
   );

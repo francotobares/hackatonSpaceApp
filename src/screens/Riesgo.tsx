@@ -13,11 +13,11 @@ const Riesgo: React.FC<RiesgoProps> = ({alerta}) => {
       <View
         style={{
           flex: 1,
-          backgroundColor: '#F5F6DD',
+          backgroundColor: 'white',
           justifyContent: 'center',
           alignItems: 'center',
         }}>
-        <Text style={{fontSize: 42, fontWeight: 'bold'}}>Nivel de Riesgo</Text>
+        <Text style={{fontSize: 42, fontWeight: 'bold'}}>Danger Level</Text>
         <View style={{flexDirection: 'row'}}>
           <View style={{flex: 1}}>
             <IconF
@@ -46,10 +46,9 @@ const Riesgo: React.FC<RiesgoProps> = ({alerta}) => {
         </View>
 
         <Text style={{fontSize: 24, fontWeight: 'bold', textAlign: 'center'}}>
-          Riesgo alto: Se han detectados incendios cerca de su zona. Se
-          recomienda: - Extremar precauciones - Ponerse a resguardo - Preparar
-          y/o dejar un bolso de emergencia en algún espacio que sea de rápido
-          acceso
+          High risk: There's fire activity nearby. Extreme caution required.
+          Stay in a safe place, have an emergency kit at hand and await further
+          information in case of evacuation.
         </Text>
       </View>
     );
@@ -63,7 +62,7 @@ const Riesgo: React.FC<RiesgoProps> = ({alerta}) => {
           justifyContent: 'center',
           alignItems: 'center',
         }}>
-        <Text style={{fontSize: 42, fontWeight: 'bold'}}>Nivel de Riesgo</Text>
+        <Text style={{fontSize: 42, fontWeight: 'bold'}}>Danger Level</Text>
         <View style={{flexDirection: 'row'}}>
           <View style={{flex: 1}}>
             <IconF
@@ -92,9 +91,8 @@ const Riesgo: React.FC<RiesgoProps> = ({alerta}) => {
         </View>
 
         <Text style={{fontSize: 24, fontWeight: 'bold', textAlign: 'center'}}>
-          Riesgo moderado: Tener precauciones a la hora de encender objetos
-          flamables.Se recomienda: - Mantenerse hidratado/a - Estar atentos a
-          próximos avisos de alerta.
+          Moderate risk: Proceed with caution when ahandling flammable
+          materials. Stay hydrated. Beware further alerts.
         </Text>
       </View>
     );
@@ -108,7 +106,7 @@ const Riesgo: React.FC<RiesgoProps> = ({alerta}) => {
           justifyContent: 'center',
           alignItems: 'center',
         }}>
-        <Text style={{fontSize: 42, fontWeight: 'bold'}}>Nivel de Riesgo</Text>
+        <Text style={{fontSize: 42, fontWeight: 'bold'}}>Danger Level</Text>
         <View style={{flexDirection: 'row'}}>
           <View style={{flex: 1}}>
             <IconF
@@ -137,10 +135,8 @@ const Riesgo: React.FC<RiesgoProps> = ({alerta}) => {
         </View>
 
         <Text style={{fontSize: 24, fontWeight: 'bold', textAlign: 'center'}}>
-          Riesgo bajo: Se recomienda de igual manera proceder con precaución y
-          criterio a la hora de hacer fuego y manipular objetos inflamables. El
-          cuidado de nuestro entorno y la preservación de nuestro ecosistema es
-          responsabilidad de todos y todas.
+          Low risk: Proceed with caution when ahandling flammable materials.
+          Preserving the environment is our resposibility
         </Text>
       </View>
     );
